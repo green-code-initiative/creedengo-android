@@ -9,14 +9,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Rule EC533 google ads consent
+### Changed
+
+### Deleted
+
+## [1.2.0] - 2026-01-04
+
+### Added
+
+- [#102](https://github.com/green-code-initiative/ecoCode-android/pull/102) Add rule EC533 (Google ads consent)
+- [#105](https://github.com/green-code-initiative/ecoCode-android/pull/105) Add rule EC534 (Tracking Id via `TelephonyManager#getDeviceId()`)
+- [#103](https://github.com/green-code-initiative/ecoCode-android/pull/103) Add rule EC549 (Hardware acceleration in Android components, XML)
 
 ### Changed
-- SPRI004: Add rule to avoid use of Tracking Id using TelephonyManager#getDeviceId()
+- [#92](https://github.com/green-code-initiative/ecoCode-android/pull/92) Update EC522 (member select) and related tests
+- Rework BrightnessOverrideRule checks and clean up unused logic
 - The embedded Groovy language analyzer was reconfigured to scan only `.gradle` files since it is the files we are interested in for
   the Android project configuration rules.
   The associated language is named `Groovy (Gradle)` instead of just `Groovy`.
   Since the plugin does not scan `.groovy` files anymore, it can work with a Groovy scanner on the same SonarQube instance.
+- Bump embedded CodeNarc to 2.2.5
+- Remove unused Groovy/CodeNarc extensions and simplify sensors
+- Fix Docker configuration for Apple M1 builds and update the jar path in compose files
+- Update CI workflow and documentation (README/RULES)
 
 ### Deleted
 
@@ -92,7 +107,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - First official release of ecocode plugins : android plugin
 
-[unreleased]: https://github.com/green-code-initiative/ecoCode/compare/v1.1.0...HEAD
+[unreleased]: https://github.com/green-code-initiative/ecoCode/compare/v1.2.0...HEAD
+
+[1.2.0]: https://github.com/green-code-initiative/ecoCode/releases/tag/v1.2.0
 
 [1.1.0]: https://github.com/green-code-initiative/ecoCode/releases/tag/v1.1.0
 

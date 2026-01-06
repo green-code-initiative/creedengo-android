@@ -1,0 +1,41 @@
+<img src="http://www.neomades.com/extern/partage/Creedengo/2sur5_1x.png">
+<p>
+    Hardware acceleration is a feature that improves rendering performance by offloading certain 2D drawing operations to the GPU.
+    While it can enhance UI responsiveness, it also increases memory and power consumption — especially on lower-end or older devices.
+    <br>
+    Since API level 14, hardware acceleration is enabled by default in Android applications. However, if not required,
+    it is recommended to disable it explicitly in the manifest to reduce resource usage and promote energy-efficient design.
+    <br>
+    This rule detects components (activities, services, etc.) that either explicitly enable hardware acceleration or inherit it implicitly without being disabled at the application level.
+</p>
+
+<h2>Noncompliant Code Example</h2>
+<pre>
+    &lt;application
+        android:label="@string/app_name"&gt;
+
+        &lt;activity
+            android:name=".FastActivity"
+            android:hardwareAccelerated="true" /&gt;
+
+        &lt;activity
+            android:name=".AnotherFastActivity" /&gt;
+
+    &lt;/application&gt;
+</pre>
+
+<h2>Compliant Solution</h2>
+<pre>
+    &lt;application
+        android:label="@string/app_name"
+        android:hardwareAccelerated="false"&gt;
+
+        &lt;activity
+            android:name=".FastActivity"
+            android:hardwareAccelerated="true" /&gt; &lt;!-- Only if really needed --&gt;
+
+        &lt;activity
+            android:name=".AnotherFastActivity" /&gt; &lt;!-- Inherits 'false' --&gt;
+
+    &lt;/application&gt;
+</pre>

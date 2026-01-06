@@ -22,7 +22,7 @@ package org.sonar.plugins.groovy.codenarc;
 import org.codenarc.rule.AbstractRule;
 
 public enum RuleSet {
-  ECOCODE("ecocode");
+  CREEDENGO("creedengo");
 //  BASIC("basic"),
 //  BRACES("braces"),
 //  COMMENTS("comments"), // new in 1.3

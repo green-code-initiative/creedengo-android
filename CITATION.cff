@@ -12,6 +12,6 @@ preferred-citation:
     orcid: "https://orcid.org/0000-0001-5405-1688"
   - family-names: "Hertout"
     given-names: "Julien"
-  title: "ecoCode: A SonarQube Plugin to Remove Energy Smells from Android Projects"
+  title: "Creedengo: A SonarQube Plugin to Remove Energy Smells from Android Projects"
   doi: 10.1145/3551349.3559518
   year: 2022

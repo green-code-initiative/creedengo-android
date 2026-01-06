@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.ecocode</groupId>
-	  <artifactId>ecocode-android-parent</artifactId>
+    <groupId>io.creedengo</groupId>
+	  <artifactId>creedengo-android-parent</artifactId>
     <version>1.2.1-SNAPSHOT</version>
   </parent>
 
@@ -13,7 +13,7 @@
   <name>Sonar CodeNarc Converter</name>
   <description>Help the earth, adopt this green plugin for your applications</description>
   <inceptionYear>2020</inceptionYear>
-  <url>https://github.com/green-code-initiative/ecocode-android/tree/main/codenarc-converter</url>
+  <url>https://github.com/green-code-initiative/creedengo-android/tree/main/codenarc-converter</url>
 
   <properties>
     <codenarc.version>2.2.5</codenarc.version>

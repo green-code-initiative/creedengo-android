@@ -1,9 +1,9 @@
-ecoCode Android SonarQube plugin
+Creedengo Android SonarQube plugin
 ================================
 
 ![Logo Ekko](docs/ekko-sonar.png)
 
-ecoCode Android SonarQube plugin is an "eco-responsibility" static code analyzer for native Android projects written in Java (Kotlin unsupported yet). Its aim is to detect code smells to indicate weither the source code can be improved to reduce their environmental and social impact.
+Creedengo Android SonarQube plugin is an "eco-responsibility" static code analyzer for native Android projects written in Java (Kotlin unsupported yet). Its aim is to detect code smells to indicate weither the source code can be improved to reduce their environmental and social impact.
 
 Build and deploy the plugin
 ---------------------------
@@ -39,8 +39,8 @@ where `FusedLocationCheckTest` is the test to run.
 
 Tests are located under:
 
-- [/src/test/java/io/ecocode/java](./src/test/java/io/ecocode/java)
-- [/src/test/java/io/ecocode/xml](./src/test/java/io/ecocode/xml)
+- [/src/test/java/io/creedengo/java](./src/test/java/io/creedengo/java)
+- [/src/test/java/io/creedengo/xml](./src/test/java/io/creedengo/xml)
 
 ### Plugin build
 
@@ -95,7 +95,7 @@ Plugin usage
 ------------
 
 The plugin contains two sets of rules, one for Java and one for XML. They can be found in the **Quality profiles** section of
-SonarQube (*ecoCode* profiles).
+SonarQube (*Creedengo* profiles).
 Do not forget to set them as "DEFAULT" or to configure your Android project on SonarQube to use these profiles before performing an
 analysis.
 
@@ -108,16 +108,16 @@ Plugin development
 
 For Java rules:
 
-- Java rules’ code can be found in: [./src/main/java/io/ecocode/java](./src/main/java/io/ecocode/java)
+- Java rules’ code can be found in: [./src/main/java/io/creedengo/java](./src/main/java/io/creedengo/java)
 - Java rules’ definition can be found in: [./src/main/resources/org/sonar/l10n/java/rules/squid](./src/main/resources/org/sonar/l10n/java/rules/squid).
   Please do not add / or modify rules here since the code is generated. To update or add a rule, please reach us though our mail
-  <contact@ecocode.io>, prior to submitting any code change.
-- Java rules’ tests can be found in: [./src/test/java/io/ecocode/java](./src/test/java/io/ecocode/java). One file = one rule.
+  <contact@creedengo.io>, prior to submitting any code change.
+- Java rules’ tests can be found in: [./src/test/java/io/creedengo/java](./src/test/java/io/creedengo/java). One file = one rule.
 
 For XML rules:
 
-- XML rules’ code can be found in: [./src/main/java/io/ecocode/xml](./src/main/java/io/ecocode/xml)
-- XML rules’ definition can be found in: [./src/main/resources/io/ecocode/xml/rules](./src/main/resources/io/ecocode/xml/rules).
+- XML rules’ code can be found in: [./src/main/java/io/creedengo/xml](./src/main/java/io/creedengo/xml)
+- XML rules’ definition can be found in: [./src/main/resources/io/creedengo/xml/rules](./src/main/resources/io/creedengo/xml/rules).
   Please do not add / or modifiy rules here since the code is generated. To update or add a rule, please reach us though our mail
-  <contact@ecocode.io>, prior to submitting any code change.
-- XML rules’ tests can be found in: [./src/test/java/io/ecocode/xml](./src/test/java/io/ecocode/xml). One file = one rule.
+  <contact@creedengo.io>, prior to submitting any code change.
+- XML rules’ tests can be found in: [./src/test/java/io/creedengo/xml](./src/test/java/io/creedengo/xml). One file = one rule.

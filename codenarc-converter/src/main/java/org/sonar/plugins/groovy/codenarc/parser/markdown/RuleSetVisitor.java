@@ -41,8 +41,8 @@ public class RuleSetVisitor extends AbstractVisitor {
 
     private RuleSet ruleset;
     private final List<RuleDescription> rules = new ArrayList<>();
-    private static final String ECOCODE_RULE_PREFIX = "EC";
-    private static final String ECOCODE_RULE_PACKAGE = "org.codenarc.rule.ecocode.";
+    private static final String CREEDENGO_RULE_PREFIX = "EC";
+    private static final String CREEDENGO_RULE_PACKAGE = "org.codenarc.rule.creedengo.";
 
     public RuleSetVisitor(RuleRegistry registry, HtmlRenderer htmlRenderer, TextContentRenderer textContentRenderer) {
         this.registry = registry;
@@ -87,9 +87,9 @@ public class RuleSetVisitor extends AbstractVisitor {
             if (header.getClass().isAssignableFrom(Text.class)) {
                 Text t = (Text) header;
                 String ruleClassName = t.getLiteral().split(" ")[0];
-                if (ruleClassName.startsWith(ECOCODE_RULE_PREFIX)) {
-                    // ecoCode rules does not have their package in the "class" entry
-                    ruleClassName =  ECOCODE_RULE_PACKAGE + ruleClassName.toString();
+                if (ruleClassName.startsWith(CREEDENGO_RULE_PREFIX)) {
+                    // Creedengo rules does not have their package in the "class" entry
+                    ruleClassName =  CREEDENGO_RULE_PACKAGE + ruleClassName.toString();
                 }
                 return registry.getRuleClass(ruleClassName) != null;
             }

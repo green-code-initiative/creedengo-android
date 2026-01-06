@@ -3,18 +3,18 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-    <groupId>io.ecocode</groupId>
-		<artifactId>ecocode-android-parent</artifactId>
+    <groupId>io.creedengo</groupId>
+		<artifactId>creedengo-android-parent</artifactId>
     <version>1.2.1-SNAPSHOT</version>
   </parent>
 
-	<artifactId>ecocode-android</artifactId>
+	<artifactId>creedengo-android</artifactId>
 	<packaging>sonar-plugin</packaging>
 
-	<name>ecoCode Android plugin</name>
+	<name>Creedengo Android plugin</name>
 	<description>Help the earth, adopt this green plugin for your applications</description>
 	<inceptionYear>2020</inceptionYear>
-	<url>https://github.com/green-code-initiative/ecocode-android/tree/main/android-plugin</url>
+	<url>https://github.com/green-code-initiative/creedengo-android/tree/main/android-plugin</url>
 
 	<properties>
 		<sslr.version>1.21</sslr.version>
@@ -222,9 +222,9 @@
 				<artifactId>sonar-packaging-maven-plugin</artifactId>
 				<extensions>true</extensions>
 				<configuration>
-					<pluginKey>ecocodeandroid</pluginKey>
+					<pluginKey>creedengoandroid</pluginKey>
 					<pluginName>${project.name}</pluginName>
-					<pluginClass>io.ecocode.EcoCodeRulesPlugin</pluginClass>
+					<pluginClass>io.creedengo.CreedengoRulesPlugin</pluginClass>
 					<sonarLintSupported>true</sonarLintSupported>
 					<sonarQubeMinVersion>${sonarqube.version}</sonarQubeMinVersion>
 					<jreMinVersion>${java.version}</jreMinVersion>

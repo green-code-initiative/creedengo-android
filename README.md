@@ -1,9 +1,9 @@
 ![Logo](docs/resources/5ekko.png)
 ======================================
 
-Mobile apps running on top of battery-limited, android-powered devices are more than others concerned by the reduction of their environmental footprint. Hence, we created `ecoCode android`, the version of ecoCode project fully dedicated to the Android platform. It provides static code analyzers to highlight code structures that may have a negative ecological impact: energy over-consumption, "fatware", shortening devices' lifespan, etc.
+Mobile apps running on top of battery-limited, android-powered devices are more than others concerned by the reduction of their environmental footprint. Hence, we created `Creedengo android`, the version of Creedengo project fully dedicated to the Android platform. It provides static code analyzers to highlight code structures that may have a negative ecological impact: energy over-consumption, "fatware", shortening devices' lifespan, etc.
 
-ecoCode android is based on an evolving catalog of [best practices for Android](https://github.com/cnumr/best-practices-mobile#-android-platform). A SonarQube plugin then implements this catalog as rules for scanning your native Android projects **written in Java only**. To learn more, take a look at the [complete presentation](docs/resources/devfest-2022.pdf) (:fr:) or the [presentation in a nutshell](docs/resources/apidays-2022.pdf). A hands-on [tutorial](https://olegoaer.perso.univ-pau.fr/green-it-summer-school/ecoCode/lab.html) and free demo access is also available (:fr:).
+Creedengo android is based on an evolving catalog of [best practices for Android](https://github.com/cnumr/best-practices-mobile#-android-platform). A SonarQube plugin then implements this catalog as rules for scanning your native Android projects **written in Java only**. To learn more, take a look at the [complete presentation](docs/resources/devfest-2022.pdf) (:fr:) or the [presentation in a nutshell](docs/resources/apidays-2022.pdf). A hands-on [tutorial](https://olegoaer.perso.univ-pau.fr/green-it-summer-school/Creedengo/lab.html) and free demo access is also available (:fr:).
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -17,15 +17,15 @@ ecoCode android is based on an evolving catalog of [best practices for Android](
 🚀 Quickstart
 -------------
 
-A SonarQube container image with ecoCode Android embedded exists !
+A SonarQube container image with Creedengo Android embedded exists !
 
 ```bash
 docker run -ti --rm \
-       -v sq_ecocode_android_logs:/opt/sonarqube/logs \
-       -v sq_ecocode_android_data:/opt/sonarqube/data \
+       -v sq_creedengo_android_logs:/opt/sonarqube/logs \
+       -v sq_creedengo_android_data:/opt/sonarqube/data \
        -p 9000:9000 \
-       --name sonarqube-ecocode-android  \
-       ghcr.io/green-code-initiative/sonarqube-ecocode-android:latest
+       --name sonarqube-creedengo-android  \
+       ghcr.io/green-code-initiative/sonarqube-creedengo-android:latest
 ```
 
 Wait a little bit during first start initialization, and go to [http://localhost:9000](http://localhost:9000). Default credentials are `admin`/`admin`
@@ -42,12 +42,12 @@ Wait a little bit during first start initialization, and go to [http://localhost
 📢 Cite this work
 ------------------
 
-If you use ecoCode in an academic work we would be really glad if you cite our seminal paper using the following bibtex entry:
+If you use Creedengo in an academic work we would be really glad if you cite our seminal paper using the following bibtex entry:
 
 ```bibtex
 @inproceedings{10.1145/3551349.3559518,
   author = {Le Goaer, Olivier and Hertout, Julien},
-  title = {ecoCode: A SonarQube Plugin to Remove Energy Smells from Android Projects},
+  title = {Creedengo: A SonarQube Plugin to Remove Energy Smells from Android Projects},
   year = {2023},
   isbn = {9781450394758},
   publisher = {Association for Computing Machinery},
@@ -66,7 +66,7 @@ If you use ecoCode in an academic work we would be really glad if you cite our s
 🛒 Distribution
 ---------------
 
-Ready to use binaries are available [from GitHub](https://github.com/green-code-initiative/ecocode-android/releases).
+Ready to use binaries are available [from GitHub](https://github.com/green-code-initiative/creedengo-android/releases).
 
 🧩 Plugins version compatibility
 ------------------

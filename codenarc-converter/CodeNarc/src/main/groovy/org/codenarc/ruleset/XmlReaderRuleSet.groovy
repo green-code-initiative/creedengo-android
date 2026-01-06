@@ -38,8 +38,8 @@ class XmlReaderRuleSet implements RuleSet {
     private static final Namespace NS = new Namespace('http://codenarc.org/ruleset/1.0')
     private static final String RULESET_SCHEMA_FILE = 'ruleset-schema.xsd'
 
-    private static final String ECOCODE_RULE_PREFIX = "EC";
-    private static final String ECOCODE_RULE_PACKAGE = "org.codenarc.rule.ecocode."
+    private static final String CREEDENGO_RULE_PREFIX = "EC";
+    private static final String CREEDENGO_RULE_PACKAGE = "org.codenarc.rule.creedengo."
 
     private final List rules = []
 
@@ -103,9 +103,9 @@ class XmlReaderRuleSet implements RuleSet {
     private void loadRuleElements(Node ruleset) {
         ruleset[NS.rule].each { ruleNode ->
             def ruleClassName = ruleNode.attribute('class')
-            if (ruleClassName.startsWith(ECOCODE_RULE_PREFIX)) {
-                // ecoCode rules does not have their package in the "class" entry
-                ruleClassName =  ECOCODE_RULE_PACKAGE + ruleClassName.toString()
+            if (ruleClassName.startsWith(CREEDENGO_RULE_PREFIX)) {
+                // Creedengo rules does not have their package in the "class" entry
+                ruleClassName =  CREEDENGO_RULE_PACKAGE + ruleClassName.toString()
             }
             def ruleClass = getClass().classLoader.loadClass(ruleClassName.toString())
             RuleSetUtil.assertClassImplementsRuleInterface(ruleClass)

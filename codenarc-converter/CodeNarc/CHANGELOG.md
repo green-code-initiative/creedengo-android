@@ -10,7 +10,7 @@ Remove rule:
 
 Version 2.2.4    (September 2023)
 --------------------------------------
-Update key of ecoCode rules:
+Update key of Creedengo rules:
 - Fat App -> EC5001
 - Supported Version Range -> EC5002
 - Disable Obfuscation -> EC5003
@@ -18,7 +18,7 @@ Update key of ecoCode rules:
 Version 2.2.3    (November 2022)
 --------------------------------------
 Added rule
-- ecoCode: Disable Obfuscation
+- Creedengo: Disable Obfuscation
 
 Version 2.2.2    (May 2022)
 --------------------------------------
@@ -28,8 +28,8 @@ Build and Infrastructure
 Version 2.2.1    (Mar 2022)
 --------------------------------------
 Added rules
-- ecoCode: Fat App
-- ecoCode: Supported Version Range
+- Creedengo: Fat App
+- Creedengo: Supported Version Range
 
 Version 2.2.0    (Aug 2021)
 --------------------------------------

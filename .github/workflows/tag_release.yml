@@ -46,7 +46,7 @@ jobs:
         id: export_jar_files
         uses: actions/upload-artifact@v3
         with:
-          name: ecocode-plugins
+          name: creedengo-plugins
           path: lib
       - name: Export UPLOAD_URL
         id: export_upload_url
@@ -60,7 +60,7 @@ jobs:
         id: import_jar_files
         uses: actions/download-artifact@v3
         with:
-          name: ecocode-plugins
+          name: creedengo-plugins
           path: lib
       - name: Upload Release Asset - Android Plugin
         id: upload-release-asset
@@ -69,7 +69,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{needs.build.outputs.upload_url}}
-          asset_path: lib/ecocode-android-${{ github.ref_name }}.jar
-          asset_name: ecocode-android-${{ github.ref_name }}.jar
+          asset_path: lib/creedengo-android-${{ github.ref_name }}.jar
+          asset_name: creedengo-android-${{ github.ref_name }}.jar
           asset_content_type: application/zip
 

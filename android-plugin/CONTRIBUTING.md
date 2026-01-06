@@ -4,7 +4,7 @@ Contributing Guidelines
 Contributions are welcome!
 
 **Before spending lots of time on something, ask for feedback on your idea first.**
-Contact us at <contact@ecocode.io> to be sure that we are interested with your contribution idea.
+Contact us at <contact@creedengo.io> to be sure that we are interested with your contribution idea.
 
 To avoid frustration, please discuss before submitting any contributions.
 
@@ -33,7 +33,7 @@ Plugin-specific recommendations
 Choose a rule within the [table of unimplemented android-specific rules](RULES.md). When submitting a *Pull Request* with your code, give it the following name: `[<id here>] <name of the rule here>`, along with both labels `android` and `rule` to ease the work of reviewers.
 
 ### Naming conventions
-Before submitting an Android-specific SonarQube custom rule, please take a look at our [naming conventions](https://doc.rules.ecocode.io/#how-to-specify-rules). 
+Before submitting an Android-specific SonarQube custom rule, please take a look at our [naming conventions](https://doc.rules.creedengo.io/#how-to-specify-rules). 
 
 ### Avoid doing things the hard way
-Idealy, take also a look at the [helpers fonctions](./src/main/java/io/ecocode/java/checks/helpers).
+Idealy, take also a look at the [helpers fonctions](./src/main/java/io/creedengo/java/checks/helpers).

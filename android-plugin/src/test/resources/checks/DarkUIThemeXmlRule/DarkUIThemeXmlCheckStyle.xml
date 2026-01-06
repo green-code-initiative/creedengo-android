@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.EcoCode.NoActionBar" parent="@android:style/Theme.Holo.Light.NoActionBar"> <!-- Noncompliant {{Using a light theme may have a significant impact on energy consumption on (AM)OLED screens.}} -->
+    <style name="Theme.Creedengo.NoActionBar" parent="@android:style/Theme.Holo.Light.NoActionBar"> <!-- Noncompliant {{Using a light theme may have a significant impact on energy consumption on (AM)OLED screens.}} -->
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.EcoCode" parent="@android:style/Theme.Holo.Light"> <!-- Noncompliant {{Using a light theme may have a significant impact on energy consumption on (AM)OLED screens.}} -->
+    <style name="Theme.Creedengo" parent="@android:style/Theme.Holo.Light"> <!-- Noncompliant {{Using a light theme may have a significant impact on energy consumption on (AM)OLED screens.}} -->
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -28,7 +28,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.EcoCode" parent="@android:style/Theme.Holo">
+    <style name="Theme.Creedengo" parent="@android:style/Theme.Holo">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -42,7 +42,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.EcoCodeDark" parent="@android:style/Theme.Material.Light"> <!-- Noncompliant {{Using a light theme may have a significant impact on energy consumption on (AM)OLED screens.}} -->
+    <style name="Theme.CreedengoDark" parent="@android:style/Theme.Material.Light"> <!-- Noncompliant {{Using a light theme may have a significant impact on energy consumption on (AM)OLED screens.}} -->
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

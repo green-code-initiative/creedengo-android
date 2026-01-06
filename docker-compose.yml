@@ -4,7 +4,7 @@ services:
     build:
       dockerfile: Dockerfile
       context: .
-    container_name: sonar_ecocode-android
+    container_name: sonar_creedengo-android
     ports:
       - "9000:9000"
     networks:
@@ -18,14 +18,14 @@ services:
       SONAR_ES_BOOTSTRAP_CHECKS_DISABLE: 'true'
     volumes:
       - type: bind
-        source: ./android-plugin/target/ecocode-android-1.1.1-SNAPSHOT.jar
-        target: /opt/sonarqube/extensions/plugins/ecocode-android-1.1.1-SNAPSHOT.jar
+        source: ./android-plugin/target/creedengo-android-1.1.1-SNAPSHOT.jar
+        target: /opt/sonarqube/extensions/plugins/creedengo-android-1.1.1-SNAPSHOT.jar
       - "logs:/opt/sonarqube/logs"
       - "data:/opt/sonarqube/data"
 
   db:
     image: postgres:12
-    container_name: postgresql_ecocode-android
+    container_name: postgresql_creedengo-android
     networks:
       - sonarnet
     volumes:

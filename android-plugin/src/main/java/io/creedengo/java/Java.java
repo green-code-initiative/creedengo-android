@@ -18,10 +18,10 @@
 package io.creedengo.java;
 
 public interface Java { //NOSONAR - we use the interface for constant without inheriting it
-    String REPOSITORY_NAME = "Creedengo (Android)";
+    String REPOSITORY_NAME = "Creedengo (Android Java)";
     String KEY = "java";
     String REPOSITORY_KEY = "creedengo-android-java";
     String RULES_SPECIFICATIONS_JAVA_PATH = "/io/creedengo/rules/java"; //NOSONAR - this URI is the same everywhere
-    String PROFILE_NAME = "Creedengo (Android)";
+    String PROFILE_NAME = "Creedengo (Android Java)";
     String PROFILE_PATH = "io/creedengo/android/java/creedengo_java_profile.json";
 }

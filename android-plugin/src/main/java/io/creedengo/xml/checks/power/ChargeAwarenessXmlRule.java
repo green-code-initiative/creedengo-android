@@ -26,7 +26,7 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
  * BATTERY_OKAY or BATTERY_LOW report a good practice.
  */
 @Rule(key = "EC545")
-@DeprecatedRuleKey(repositoryKey = "creedengo-xml", ruleKey = "EPOW005")
+@DeprecatedRuleKey(repositoryKey = "ecocode-xml", ruleKey = "EPOW005")
 public class ChargeAwarenessXmlRule extends XPathSimpleCheck {
 
     private String xPathActionPowerConnected = "//manifest/application/receiver/intent-filter/action/@name[.=\"android.intent.action.ACTION_POWER_CONNECTED\"]";

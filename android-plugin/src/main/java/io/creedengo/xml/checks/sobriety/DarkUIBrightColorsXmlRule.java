@@ -36,7 +36,7 @@ import org.w3c.dom.Node;
  *  </ul>
  */
 @Rule(key = "EC547")
-@DeprecatedRuleKey(repositoryKey = "creedengo-xml", ruleKey = "ESOB003")
+@DeprecatedRuleKey(repositoryKey = "ecocode-xml", ruleKey = "ESOB003")
 public class DarkUIBrightColorsXmlRule extends XPathCheck {
 
     private static final String[] ATTRIBUTES_TO_CHECK = {

@@ -22,7 +22,7 @@ import org.sonar.check.Rule;
 import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
 
 @Rule(key = "EC541")
-@DeprecatedRuleKey(repositoryKey = "creedengo-xml", ruleKey = "EIDL003")
+@DeprecatedRuleKey(repositoryKey = "ecocode-xml", ruleKey = "EIDL003")
 public class KeepScreenOnXmlRule extends XPathSimpleCheck {
 
     private static final String KEEP_SCREEN_ON_XML_ATTRIBUTE = "//*[contains(@keepScreenOn, 'true')]/@keepScreenOn";

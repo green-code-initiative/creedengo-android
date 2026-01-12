@@ -16,7 +16,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Keep deprecated rule repository key as `ecocode-android-java`
 - Align profile names for Java/XML/Gradle and update Java/XML profile JSON names
 - Refine README rebranding wording and structure
-- Keep project version at `1.2.1-SNAPSHOT`
 
 ### Deleted
 

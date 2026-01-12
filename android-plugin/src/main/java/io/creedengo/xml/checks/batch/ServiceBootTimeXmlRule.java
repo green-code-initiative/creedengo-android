@@ -25,7 +25,7 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
  * Checks manifest intent-filter statement: if the action is BOOT_COMPLETED, report a bad practice
  */
 @Rule(key = "EC540")
-@DeprecatedRuleKey(repositoryKey = "creedengo-xml", ruleKey = "EBAT001")
+@DeprecatedRuleKey(repositoryKey = "ecocode-xml", ruleKey = "EBAT001")
 public class ServiceBootTimeXmlRule extends XPathSimpleCheck {
 
     private static final String SERVICE_BOOT_TIME_ATTRIBUTE = "//manifest/application/receiver/intent-filter/action/@name[. = \"android.intent.action.BOOT_COMPLETED\"]";

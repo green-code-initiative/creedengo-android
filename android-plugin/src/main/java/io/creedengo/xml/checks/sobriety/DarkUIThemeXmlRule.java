@@ -43,7 +43,7 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
  * </ul>
  */
 @Rule(key = "EC548")
-@DeprecatedRuleKey(repositoryKey = "creedengo-xml", ruleKey = "ESOB004")
+@DeprecatedRuleKey(repositoryKey = "ecocode-xml", ruleKey = "ESOB004")
 public class DarkUIThemeXmlRule extends XPathSimpleCheck {
 
     private static final String STYLE_HOLO_LIGHT = "/resources/style[starts-with(@parent, \"@android:style/Theme.Holo.Light\")]/@parent";

@@ -26,7 +26,7 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
  * if the permission "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" is found, report an issue.
  */
 @Rule(key = "EC546")
-@DeprecatedRuleKey(repositoryKey = "creedengo-xml", ruleKey = "EPOW007")
+@DeprecatedRuleKey(repositoryKey = "ecocode-xml", ruleKey = "EPOW007")
 public class SaveModeAwarenessXmlRule extends XPathSimpleCheck {
 
     private static final String ACTION_POWER_CHANGED_XPATH = "//manifest/application/receiver/intent-filter/action/@name[.=\"android.intent.action.BATTERY_CHANGED\"]";

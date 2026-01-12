@@ -26,7 +26,7 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
  * if the permission "android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND" is found, report an issue.
  */
 @Rule(key = "EC543")
-@DeprecatedRuleKey(repositoryKey = "creedengo-xml", ruleKey = "EPOW002")
+@DeprecatedRuleKey(repositoryKey = "ecocode-xml", ruleKey = "EPOW002")
 public class CompagnionInBackgroundXmlRule extends CheckPermissionsRule {
 
     private static final String PERMISSION_NAME = "android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND";

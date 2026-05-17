@@ -34,7 +34,8 @@ import java.util.List;
  * <li>If the first import is found but not the second, report an issue.</li>
  * </ul>`
  */
-@Rule(key = "EC517")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC517")
+@Rule(key = "GCI517")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "EOPT001")
 public class FusedLocationRule extends IssuableSubscriptionVisitor {
 

@@ -25,7 +25,8 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
  * Checks manifest intent-filter statement: if the action is ACTION_POWER_CONNECTED, ACTION_POWER_DISCONNECTED,
  * BATTERY_OKAY or BATTERY_LOW report a good practice.
  */
-@Rule(key = "EC545")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-xml", ruleKey = "EC545")
+@Rule(key = "GCI545")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-xml", ruleKey = "EPOW005")
 public class ChargeAwarenessXmlRule extends XPathSimpleCheck {
 

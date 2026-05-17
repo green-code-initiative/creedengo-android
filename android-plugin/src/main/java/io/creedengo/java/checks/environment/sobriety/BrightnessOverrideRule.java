@@ -29,7 +29,8 @@ import java.util.Optional;
  * Check the assignment of the variable android.view.WindowManager$LayoutParams.screenBrightness with the value
  * "BRIGHTNESS_OVERRIDE_FULL" (1.0f).
  */
-@Rule(key = "EC522")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC522")
+@Rule(key = "GCI522")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "ESOB002")
 public class BrightnessOverrideRule extends IssuableSubscriptionVisitor {
 

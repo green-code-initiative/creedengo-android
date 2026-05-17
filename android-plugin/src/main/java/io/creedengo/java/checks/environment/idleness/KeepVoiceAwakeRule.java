@@ -39,7 +39,8 @@ import java.util.Optional;
  * If the argument 0 of the method is true, report the method node.
  * Otherwise report an issue on the new class nodes.
  */
-@Rule(key = "EC511")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC511")
+@Rule(key = "GCI511")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "EIDL009")
 public class KeepVoiceAwakeRule extends IssuableSubscriptionVisitor {
 

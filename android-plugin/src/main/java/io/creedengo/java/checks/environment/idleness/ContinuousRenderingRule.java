@@ -25,7 +25,8 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
  * Check the call of the method "setRenderMode" of "opengl.GLSurfaceView".
  * If argument value is "1" report issue.
  */
-@Rule(key = "EC510")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC510")
+@Rule(key = "GCI510")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "EIDL008")
 public class ContinuousRenderingRule extends FlagOnMethodCheck {
 

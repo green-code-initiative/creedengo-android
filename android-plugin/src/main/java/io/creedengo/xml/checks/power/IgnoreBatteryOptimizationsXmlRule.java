@@ -25,7 +25,8 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
  * Checks manifest uses-permissions statement:
  * if the permission "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" is found, report an issue.
  */
-@Rule(key = "EC544")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-xml", ruleKey = "EC544")
+@Rule(key = "GCI544")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-xml", ruleKey = "EPOW003")
 public class IgnoreBatteryOptimizationsXmlRule extends CheckPermissionsRule {
 

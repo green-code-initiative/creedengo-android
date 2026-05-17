@@ -24,7 +24,8 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
 /**
  * Check the call of the method "setExact" And "setExactAndAllowWhileIdle" and "setRepeating" of "android.app.AlarmManager".
  */
-@Rule(key = "EC509")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC509")
+@Rule(key = "GCI509")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "EIDL007")
 public class RigidAlarmRule extends SpecificMethodCheck {
 

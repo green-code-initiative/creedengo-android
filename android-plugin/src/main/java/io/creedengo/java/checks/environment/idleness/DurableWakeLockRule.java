@@ -30,7 +30,8 @@ import java.util.List;
  * Check the call of the method "acquire" of "android.os.PowerManager$WakeLock".
  * Reports an issue if found without any parameters.
  */
-@Rule(key = "EC508")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC508")
+@Rule(key = "GCI508")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "EIDL006")
 public class DurableWakeLockRule extends IssuableSubscriptionVisitor {
     private String methodOwnerType = "android.os.PowerManager$WakeLock";

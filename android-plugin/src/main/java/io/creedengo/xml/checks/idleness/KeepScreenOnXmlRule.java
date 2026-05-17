@@ -21,7 +21,8 @@ import io.creedengo.xml.checks.XPathSimpleCheck;
 import org.sonar.check.Rule;
 import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
 
-@Rule(key = "EC541")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-xml", ruleKey = "EC541")
+@Rule(key = "GCI541")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-xml", ruleKey = "EIDL003")
 public class KeepScreenOnXmlRule extends XPathSimpleCheck {
 

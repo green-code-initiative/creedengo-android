@@ -26,7 +26,8 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
  *
  * @see ConstructorBeforeMethodCheck
  */
-@Rule(key = "EC515")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC515")
+@Rule(key = "GCI515")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "ELEA005")
 public class MediaLeakMediaRecorderRule extends ConstructorBeforeMethodCheck {
     private static final String ERROR_MESSAGE = "Failing to call release() on a Media Recorder may lead to continuous battery consumption.";

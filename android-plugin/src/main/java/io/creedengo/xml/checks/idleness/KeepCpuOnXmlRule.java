@@ -25,7 +25,8 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
  * Checks manifest uses-permissions statement.
  * if the permissions "android.permission.WAKE_LOCK" is found, report an issue.
  */
-@Rule(key = "EC542")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-xml", ruleKey = "EC542")
+@Rule(key = "GCI542")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-xml", ruleKey = "EIDL005")
 public class KeepCpuOnXmlRule extends CheckPermissionsRule {
 

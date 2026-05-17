@@ -42,7 +42,8 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
  *     "@style/Theme.MaterialComponents.Light"</li>
  * </ul>
  */
-@Rule(key = "EC548")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-xml", ruleKey = "EC548")
+@Rule(key = "GCI548")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-xml", ruleKey = "ESOB004")
 public class DarkUIThemeXmlRule extends XPathSimpleCheck {
 

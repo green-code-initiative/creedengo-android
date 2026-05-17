@@ -25,7 +25,8 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
  * On the method `android.bluetooth.BluetoothGatt#requestConnectionPriority(int)`, reports an issue if
  * it is called with a parameter value different from `CONNECTION_PRIORITY_LOW_POWER (2)`.
  */
-@Rule(key = "EC526")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC526")
+@Rule(key = "GCI526")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "ESOB008")
 public class ThriftyBluetoothLowEnergyRequestConnectionPriorityRule extends ConstantOnMethodCheck {
 

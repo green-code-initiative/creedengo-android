@@ -28,7 +28,8 @@ import java.util.Optional;
  * Check the call of the method "setTorchMode" from "android.hardware.camera2.CameraManager"
  * with the param 1 set to "true".
  */
-@Rule(key = "EC530")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC530")
+@Rule(key = "GCI530")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "ESOB013")
 public class TorchFreeRule extends ArgumentValueOnMethodCheck {
 

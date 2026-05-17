@@ -36,7 +36,8 @@ import java.util.List;
  * Check if a method requestLocationUpdates is called from android.location.LocationManager package.
  * If minDistance argument value is 0, report an issue on the argument.
  */
-@Rule(key = "EC527")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC527")
+@Rule(key = "GCI527")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "ESOB010")
 public class ThriftyGeolocationMinDistanceRule extends IssuableSubscriptionVisitor {
     private static final String ERROR_MESSAGE = "Location updates should be done with a distance interval greater than 0.";

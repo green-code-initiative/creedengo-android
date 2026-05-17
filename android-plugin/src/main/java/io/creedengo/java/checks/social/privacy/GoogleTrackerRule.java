@@ -35,7 +35,8 @@ import java.util.List;
  * practice should be discouraged at early stage.
  */
 
-@Rule(key = "EC532")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC532")
+@Rule(key = "GCI532")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "SPRI002")
 public class GoogleTrackerRule extends BaseTreeVisitor implements JavaFileScanner {
 

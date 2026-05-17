@@ -35,7 +35,8 @@ import org.w3c.dom.Node;
  *      <li>If the value is an hexa value >= to a given brightness threshold throw an issue</li>
  *  </ul>
  */
-@Rule(key = "EC547")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-xml", ruleKey = "EC547")
+@Rule(key = "GCI547")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-xml", ruleKey = "ESOB003")
 public class DarkUIBrightColorsXmlRule extends XPathCheck {
 

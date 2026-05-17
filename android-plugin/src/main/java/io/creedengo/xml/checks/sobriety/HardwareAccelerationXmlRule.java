@@ -23,7 +23,8 @@ import org.sonar.check.Rule;
 import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
 import org.w3c.dom.Node;
 
-@Rule(key = "EC549", name = "Hardware acceleration", priority = Priority.MAJOR)
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-xml", ruleKey = "EC549")
+@Rule(key = "GCI549", name = "Hardware acceleration", priority = Priority.MAJOR)
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-xml", ruleKey = "ESOB016")
 public class HardwareAccelerationXmlRule extends XPathSimpleCheck {
 

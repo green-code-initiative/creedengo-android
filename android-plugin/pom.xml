@@ -14,7 +14,7 @@
 	<name>Creedengo Android Java plugin</name>
 	<description>Help the earth, adopt this green plugin for your applications</description>
 	<inceptionYear>2020</inceptionYear>
-	<url>https://github.com/green-code-initiative/ecoCode-android/tree/main/android-plugin</url>
+	<url>https://github.com/green-code-initiative/creedengo-android/tree/main/android-plugin</url>
 
 	<properties>
 		<sslr.version>1.21</sslr.version>

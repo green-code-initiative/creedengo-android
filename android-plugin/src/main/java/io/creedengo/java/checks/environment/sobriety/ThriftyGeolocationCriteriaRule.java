@@ -47,7 +47,8 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
  * * **Case 3**:
  * - if the method `setPowerRequirement` of type `android.location.Criteria` is called report an issue on its first argument if it's not `1`.
  */
-@Rule(key = "EC524")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC524")
+@Rule(key = "GCI524")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "ESOB006")
 public class ThriftyGeolocationCriteriaRule extends IssuableSubscriptionVisitor {
 

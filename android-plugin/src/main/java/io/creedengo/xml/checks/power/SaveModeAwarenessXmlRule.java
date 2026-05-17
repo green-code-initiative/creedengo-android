@@ -25,7 +25,8 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
  * Checks manifest uses-permissions statement:
  * if the permission "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" is found, report an issue.
  */
-@Rule(key = "EC546")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-xml", ruleKey = "EC546")
+@Rule(key = "GCI546")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-xml", ruleKey = "EPOW007")
 public class SaveModeAwarenessXmlRule extends XPathSimpleCheck {
 

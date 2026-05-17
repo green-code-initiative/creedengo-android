@@ -14,7 +14,8 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
  * To support publishers in meeting their duties under the EU User Consent Policy, Google offers a Consent SDK.
  * Hence, importing classes from com.google.android.ads.consent or com.google.android.ump:user-messaging-platform is considered as a good practice.
  */
-@Rule(key = "EC533", name = "GDPR: Google Consent")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC533")
+@Rule(key = "GCI533", name = "GDPR: Google Consent")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "SGDP001")
 public class GoogleAndroidAdsConsentRule extends BaseTreeVisitor implements JavaFileScanner {
 

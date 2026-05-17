@@ -40,7 +40,8 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
  * - if the method getOutputStream from the URLConnection class is called, reports the issue.
  * - if a constructor is called with for parameter getOutputStream, reports the issue if the constructor isn't a GZIPOutputStream.
  */
-@Rule(key = "EC504")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC504")
+@Rule(key = "GCI504")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "EBOT003")
 public class UncompressedDataTransmissionRule extends IssuableSubscriptionVisitor {
     private static final Logger LOG = Loggers.get(UncompressedDataTransmissionRule.class);

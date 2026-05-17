@@ -40,7 +40,8 @@ import java.util.List;
  * </li>
  * </ul>
  */
-@Rule(key = "EC518")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC518")
+@Rule(key = "GCI518")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "EOPT002")
 public class BluetoothLowEnergyRule extends BaseTreeVisitor implements JavaFileScanner {
 

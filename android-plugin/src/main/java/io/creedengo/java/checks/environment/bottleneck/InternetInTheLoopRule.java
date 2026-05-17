@@ -30,7 +30,8 @@ import java.util.List;
  * Check if the method openConnection of the Url class is called inside a loop.
  * Not thrown if openConnection() call is deported into an other method.
  */
-@Rule(key = "EC502")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC502")
+@Rule(key = "GCI502")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "EBOT001")
 public class InternetInTheLoopRule extends IssuableSubscriptionVisitor {
 

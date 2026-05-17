@@ -30,7 +30,8 @@ import java.util.List;
  * Checks the call of "set", "setAlarmClock", "setExact", "setInexactRepeating", "setRepeating" & "setWindow" from "android.app.AlarmManager".
  * Checks also the call of "onPerformSync" & "getSyncAdapterBinder" from "android.content.AbstractThreadedSyncAdapter".
  */
-@Rule(key = "EC501")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC501")
+@Rule(key = "GCI501")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "EBAT003")
 public class JobCoalesceRule extends IssuableSubscriptionVisitor {
 

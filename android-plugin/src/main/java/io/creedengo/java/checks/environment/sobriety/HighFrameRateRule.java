@@ -27,7 +27,8 @@ import org.sonarsource.analyzer.commons.annotations.DeprecatedRuleKey;
 import java.util.List;
 import java.util.Optional;
 
-@Rule(key = "EC531")
+@DeprecatedRuleKey(repositoryKey = "creedengo-android-java", ruleKey = "EC531")
+@Rule(key = "GCI531")
 @DeprecatedRuleKey(repositoryKey = "ecocode-android-java", ruleKey = "ESOB014")
 public class HighFrameRateRule extends IssuableSubscriptionVisitor {
 

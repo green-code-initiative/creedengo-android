@@ -1,6 +1,6 @@
 /*
- * ecoCode Android plugin - Provides rules to reduce the environmental footprint of your Android applications
- * Copyright © 2020 Green Code Initiative (contact@ecocode.io)
+ * Creedengo Android Java plugin - Provides rules to reduce the environmental footprint of your Android applications
+ * Copyright © 2020 Green Code Initiative (contact@green-code-initiative.org)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

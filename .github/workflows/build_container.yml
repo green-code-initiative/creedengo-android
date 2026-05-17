@@ -14,9 +14,9 @@ on:
 
 env:
   # github.repository as <account>/<repo>
-  IMAGE_NAME: sonarqube-ecocode-android
+  IMAGE_NAME: sonarqube-creedengo-android
   IMAGES: |
-    ghcr.io/${{ github.repository_owner }}/sonarqube-ecocode-android
+    ghcr.io/${{ github.repository_owner }}/sonarqube-creedengo-android
   PLATFORMS: linux/amd64,linux/arm64/v8
 jobs:
   Build:

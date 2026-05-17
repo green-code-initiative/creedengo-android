@@ -1,6 +1,6 @@
 /*
- * ecoCode Android plugin - Provides rules to reduce the environmental footprint of your Android applications
- * Copyright © 2020 Green Code Initiative (contact@ecocode.io)
+ * Creedengo Android Java plugin - Provides rules to reduce the environmental footprint of your Android applications
+ * Copyright © 2020 Green Code Initiative (contact@green-code-initiative.org)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 import com.google.firebase.analytics.FirebaseAnalytics; // Noncompliant {{Using com.google.firebase.analytics.* is a potential threat for privacy.}}
-import com.io.ecocode.MaClasse;
+import com.io.creedengo.MaClasse;
 import com.google.android.gms.Test;
 import com.google.android.gms.analytics.GoogleAnalytics; // Noncompliant {{Using com.google.android.gms.analytics.* is a potential threat for privacy.}}
 

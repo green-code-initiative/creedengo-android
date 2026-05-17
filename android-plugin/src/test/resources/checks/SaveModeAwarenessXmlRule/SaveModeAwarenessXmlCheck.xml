@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="io.ecocode.testapp">
+          package="io.creedengo.testapp">
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application>
-        <receiver android:name="io.ecocode.testapp.core.service.MyReceiver">
+        <receiver android:name="io.creedengo.testapp.core.service.MyReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
                 <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />

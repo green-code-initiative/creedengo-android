@@ -6,6 +6,7 @@
 
 # Ignore generated files
 target
+build
 lib
 bin
 dependency-reduced-pom.xml

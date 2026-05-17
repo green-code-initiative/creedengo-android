@@ -166,8 +166,8 @@ title: CodeNarc - Rule Index
 * [DuplicateNumberLiteral](./codenarc-rules-dry.html#duplicatenumberliteral-rule)
 * [DuplicateStringLiteral](./codenarc-rules-dry.html#duplicatestringliteral-rule)
 
-## [Ecocode](./codenarc-rules-ecocode.html)
-* [EC5001](./codenarc-rules-ecocode.html#EC5001-rule)
+## [Creedengo](./codenarc-rules-creedengo.html)
+* [EC5001](./codenarc-rules-creedengo.html#EC5001-rule)
 
 ## [Enhanced](./codenarc-rules-enhanced.html)
 * [CloneWithoutCloneable](./codenarc-rules-enhanced.html#clonewithoutcloneable-rule)

@@ -34,7 +34,7 @@ import org.sonar.plugins.groovy.foundation.Groovy;
 
 public class CodeNarcRulesDefinition implements RulesDefinition {
 
-  public static final String REPOSITORY_KEY = "ecocode-android-groovy";
+  public static final String REPOSITORY_KEY = "creedengo-android-groovy";
   public static final String REPOSITORY_NAME = Groovy.PROFILE_NAME;
   private static final String COST_FILE_PATH = "/org/sonar/plugins/groovy/cost.csv";
 

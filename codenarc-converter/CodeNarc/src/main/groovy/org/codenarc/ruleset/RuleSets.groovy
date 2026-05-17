@@ -30,7 +30,7 @@ class RuleSets {
             'rulesets/convention.xml',
             'rulesets/design.xml',
             'rulesets/dry.xml',
-            'rulesets/ecocode.xml',
+            'rulesets/creedengo.xml',
             'rulesets/enhanced.xml',
             'rulesets/exceptions.xml',
             'rulesets/formatting.xml',

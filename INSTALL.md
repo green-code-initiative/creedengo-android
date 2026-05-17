@@ -1,14 +1,14 @@
 - [Common installation notes / requirements](#common-installation-notes--requirements)
 - [Special points for Android plugins](#special-points-for-android-plugins)
   - [Project structure](#project-structure)
-  - [Howto build the SonarQube ecoCode plugins](#howto-build-the-sonarqube-ecocode-plugins)
+  - [Howto build the SonarQube Creedengo plugins](#howto-build-the-sonarqube-creedengo-plugins)
     - [Preliminary steps (only Android)](#preliminary-steps-only-android)
     - [Others steps](#others-steps)
 
 Common installation notes / requirements
 ========================================
 
-Please read common [INSTALL.md](https://github.com/green-code-initiative/ecoCode-common/blob/main/doc/INSTALL.md) in `ecoCode-common` repository.
+Please read common [INSTALL.md](https://github.com/green-code-initiative/creedengo-common/blob/main/doc/INSTALL.md) in `creedengo-common` repository.
 
 Special points for Android plugins
 =================================
@@ -19,7 +19,7 @@ Project structure
 Here is a preview of project tree :
 
 ```txt
-ecocode-android          # Root directory
+creedengo-android          # Root directory
 |
 +--android-plugin       # Android
 |
@@ -30,7 +30,7 @@ ecocode-android          # Root directory
 
 You will find more information about the plugins’ architecture in their folders
 
-Howto build the SonarQube ecoCode plugins
+Howto build the SonarQube Creedengo plugins
 -----------------------------------------
 
 ### Preliminary steps (only Android)

@@ -31,7 +31,7 @@ public class Groovy extends AbstractLanguage {
 
   public static final String KEY = "groovy_gradle";
   public static final String NAME = "Groovy (Gradle)";
-  public static final String PROFILE_NAME = "ecoCode (Android)";
+  public static final String PROFILE_NAME = "Creedengo (Android Gradle)";
   public static final String FILE_SUFFIXES_KEY = "sonar.gradle.file.suffixes";
   static final String DEFAULT_FILE_SUFFIXES = ".gradle";
 

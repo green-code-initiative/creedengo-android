@@ -165,7 +165,7 @@ ruleset {
     DuplicateNumberLiteral 
     DuplicateStringLiteral
 
-    // rulesets/ecocode.xml
+    // rulesets/creedengo.xml
     EC5001
     EC5003
 

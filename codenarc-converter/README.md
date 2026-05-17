@@ -18,7 +18,7 @@ To summarize Codenarc implementation process:
 - We create a custom Codenarc version that we build.
 - We use that implementation as source for codenarc-converter.
 - Codenarc-converter parses Codenarc output and generates Sonarqube rules using CodeNarc's documentation.
-  Then it's used in ecoCode plugin profile to analyse groovy files.
+  Then it's used in Creedengo plugin profile to analyse groovy files.
 
 ### Step 1: configuring the rule in CodeNarc
 
@@ -32,8 +32,8 @@ You will be asked a few questions that will modify documentation files in `[...]
 
 - `/CHANGELOG.md`: changelist.
 - `/docs/codenarc-base-messages.properties`: rules description.
-- `/docs/codenarc-rules-ecocode.md`: rules documentation.
-- `/src/main/resources/rulesets/ecocode.xmlecocode.xml`: rules list.
+- `/docs/codenarc-rules-creedengo.md`: rules documentation.
+- `/src/main/resources/rulesets/creedengo.xml`: rules list.
 
 and generates rule files:
 
@@ -59,7 +59,7 @@ Tests should fail at this point, you still need to modify a few files.
 In `[...]/android-plugin/src/main/resources/org/sonar/plugins/groovy`:
 
 - `rules.xml`: replace it by `rules.xml` generated in `[...]/codenarc-converter/target/results`
-- `profile-default.txt`: add your rule full qualified name (e.g. org.codenarc.rule.ecocode.SupportedVersionRangeRule) to the list
+- `profile-default.txt`: add your rule full qualified name (e.g. org.codenarc.rule.creedengo.SupportedVersionRangeRule) to the list
 - `cost.csv`: add your rule cost to the list (see following [remediation cost conversion array](#remediation-cost-conversion-array))
 
 ### Step 3: writing your rule

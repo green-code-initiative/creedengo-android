@@ -88,7 +88,7 @@ public class RuleConverter {
         log.info("Rules by category:");
         result.getRuleCountByCategory().forEach((category, count) -> {
             if ("code-smell".equals(category)) {
-                category = "ecocode";
+                category = "creedengo";
             }
             log.info("  - {} : {}", category, count);
         });

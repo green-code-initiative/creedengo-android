@@ -41,7 +41,7 @@
 		<project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
 
-		<sonarqube.version>9.4.0.54424</sonarqube.version>
+		<sonarqube.version>13.6.0.4371</sonarqube.version>
 		<sonarjava.version>7.15.0.30507</sonarjava.version>
 
 		<sonar.organization>green-code-initiative</sonar.organization>
@@ -69,7 +69,7 @@
 		<dependencies>
 			<!-- MAIN sources dependencies -->
 			<dependency>
-				<groupId>org.sonarsource.sonarqube</groupId>
+				<groupId>org.sonarsource.api.plugin</groupId>
 				<artifactId>sonar-plugin-api</artifactId>
 				<version>${sonarqube.version}</version>
 				<scope>provided</scope>

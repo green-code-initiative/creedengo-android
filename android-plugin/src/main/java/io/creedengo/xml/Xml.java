@@ -21,7 +21,7 @@ public interface Xml { //NOSONAR - we use the interface for constant without inh
     String REPOSITORY_NAME = "Creedengo (Android XML)";
     String KEY = "xml";
     String REPOSITORY_KEY = "creedengo-android-xml";
-    String RULES_SPECIFICATIONS_XML_PATH = "io/creedengo/rules/xml";
+    String RULES_SPECIFICATIONS_XML_PATH = "/org/green-code-initiative/rules/xml";
     String PROFILE_NAME = "Creedengo (Android XML)";
     String PROFILE_PATH = "io/creedengo/android/xml/creedengo_xml_profile.json";
 }

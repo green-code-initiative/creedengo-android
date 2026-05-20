@@ -17,17 +17,8 @@
  */
 package io.creedengo.java;
 
-import com.google.gson.Gson;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.util.Locale;
-import java.util.stream.Collectors;
-import javax.annotation.Nullable;
+import io.creedengo.common.RuleSpecificationLoader;
 import org.apache.commons.lang.StringUtils;
-import org.sonar.api.rule.RuleStatus;
-import org.sonar.api.rules.RuleType;
-import org.sonar.api.server.debt.DebtRemediationFunction;
 import org.sonar.api.server.rule.RulesDefinition;
 import org.sonar.api.server.rule.RulesDefinitionAnnotationLoader;
 import org.sonar.api.utils.AnnotationUtils;
@@ -39,8 +30,6 @@ import org.sonar.squidbridge.annotations.RuleTemplate;
  * That allows to list the rules in the page "Rules".
  */
 public class JavaRulesDefinition implements RulesDefinition {
-
-  private final Gson gson = new Gson();
 
   @Override
   public void define(Context context) {
@@ -70,75 +59,9 @@ public class JavaRulesDefinition implements RulesDefinition {
     if (rule == null) {
       throw new IllegalStateException("No rule was created for " + ruleClass + " in " + repository.key());
     }
-    ruleMetadata(rule);
+    RuleSpecificationLoader.load(rule, ruleKey, Java.RULES_SPECIFICATIONS_JAVA_PATH);
 
     rule.setTemplate(AnnotationUtils.getAnnotation(ruleClass, RuleTemplate.class) != null);
-  }
-
-  private void ruleMetadata(NewRule rule) {
-    String metadataKey = rule.key();
-    addHtmlDescription(rule, metadataKey);
-    addMetadata(rule, metadataKey);
-  }
-
-  private void addMetadata(NewRule rule, String metadataKey) {
-    URL resource = JavaRulesDefinition.class.getResource(Java.RULES_SPECIFICATIONS_JAVA_PATH + "/" + metadataKey + ".json");
-    if (resource != null) {
-      RuleMetatada metatada = gson.fromJson(readResource(resource), RuleMetatada.class);
-      rule.setSeverity(metatada.defaultSeverity.toUpperCase(Locale.US));
-      rule.setName(metatada.title);
-      rule.addTags(metatada.tags);
-      rule.setType(RuleType.valueOf(metatada.type));
-      rule.setStatus(RuleStatus.valueOf(metatada.status.toUpperCase(Locale.US)));
-      if (metatada.remediation != null) {
-        rule.setDebtRemediationFunction(metatada.remediation.remediationFunction(rule.debtRemediationFunctions()));
-        rule.setGapDescription(metatada.remediation.linearDesc);
-      }
-    }
-  }
-
-  private static void addHtmlDescription(NewRule rule, String metadataKey) {
-    URL resource = JavaRulesDefinition.class.getResource(Java.RULES_SPECIFICATIONS_JAVA_PATH + "/" + metadataKey + ".html");
-    if (resource != null) {
-      rule.setHtmlDescription(readResource(resource));
-    }
-  }
-
-  private static String readResource(URL resource) {
-    try (BufferedReader reader = new BufferedReader(new InputStreamReader(resource.openStream()))) {
-      return reader.lines().collect(Collectors.joining("\n"));
-    } catch (Exception e) {
-      throw new IllegalStateException("Failed to read: " + resource, e);
-    }
-  }
-
-  private static class RuleMetatada {
-    String title;
-    String status;
-    @Nullable
-    Remediation remediation;
-
-    String type;
-    String[] tags;
-    String defaultSeverity;
-  }
-
-  private static class Remediation {
-    String func;
-    String constantCost;
-    String linearDesc;
-    String linearOffset;
-    String linearFactor;
-
-    public DebtRemediationFunction remediationFunction(DebtRemediationFunctions drf) {
-      if (func.startsWith("Constant")) {
-        return drf.constantPerIssue(constantCost.replace("mn", "min"));
-      }
-      if ("Linear".equals(func)) {
-        return drf.linear(linearFactor.replace("mn", "min"));
-      }
-      return drf.linearWithOffset(linearFactor.replace("mn", "min"), linearOffset.replace("mn", "min"));
-    }
   }
 
 }

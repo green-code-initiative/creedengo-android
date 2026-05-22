@@ -46,7 +46,7 @@ Wait a little bit during first start initialization, and go to [http://localhost
 🛒 Distribution
 ---------------
 
-Ready to use binaries are available [from GitHub](https://github.com/green-code-initiative/ecoCode-android/releases).
+Ready to use binaries are available [from GitHub](https://github.com/green-code-initiative/creedengo-android-java/releases).
 
 🧩 Plugins version compatibility
 ------------------
@@ -57,6 +57,7 @@ Ready to use binaries are available [from GitHub](https://github.com/green-code-
 | 0.1.+           | SonarQube 9.4.+ LTS to 9.9  |
 | 1.0.+           | SonarQube 9.4.+ LTS to 9.9  |
 | 1.1.+           | SonarQube 9.4.+ LTS to 10.3 |
+| 2.0.+           | SonarQube 9.4.+ LTS to 13.6 |
 
 ☕ Plugin Java part compatibility
 ------------------
@@ -84,12 +85,12 @@ Have an idea or want to help? We welcome contributions. See `CONTRIBUTING.md` an
 📢 Cite this work
 ------------------
 
-If you use Creedengo in an academic work we would be really glad if you cite our seminal paper using the following bibtex entry:
+If you use Creedengo (formerly ecocode) in an academic work we would be really glad if you cite our seminal paper using the following bibtex entry:
 
 ```bibtex
 @inproceedings{10.1145/3551349.3559518,
   author = {Le Goaer, Olivier and Hertout, Julien},
-  title = {Creedengo: A SonarQube Plugin to Remove Energy Smells from Android Projects},
+  title = {ecoCode: A SonarQube Plugin to Remove Energy Smells from Android Projects},
   year = {2023},
   isbn = {9781450394758},
   publisher = {Association for Computing Machinery},

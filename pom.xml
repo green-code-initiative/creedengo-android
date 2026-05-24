@@ -44,6 +44,8 @@
 		<sonarqube.version>13.6.0.4371</sonarqube.version>
 		<sonarjava.version>7.15.0.30507</sonarjava.version>
 
+		<creedengo-rules-specifications.version>3.0.0</creedengo-rules-specifications.version>
+
 		<sonar.organization>green-code-initiative</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 
@@ -63,7 +65,8 @@
 		<sonar.exclusions>**/codenarc-converter/**,**/*.groovy,**/android-plugin/src/test/**,**/*.dummy,**/generated/**/*.*</sonar.exclusions>
 		<sonar.coverage.exclusions>**/generated/**/*.*</sonar.coverage.exclusions>
 
-	</properties>
+
+    </properties>
 
 	<dependencyManagement>
 		<dependencies>
@@ -124,6 +127,25 @@
 				<version>${junit.version}</version>
 				<scope>test</scope>
 			</dependency>
+
+            <dependency>
+                <groupId>org.green-code-initiative</groupId>
+                <artifactId>creedengo-rules-specifications</artifactId>
+                <version>${creedengo-rules-specifications.version}</version>
+                <classifier>java</classifier>
+            </dependency>
+            <dependency>
+                <groupId>org.green-code-initiative</groupId>
+                <artifactId>creedengo-rules-specifications</artifactId>
+                <version>${creedengo-rules-specifications.version}</version>
+                <classifier>xml</classifier>
+            </dependency>
+
+            <dependency>
+                <groupId>org.reflections</groupId>
+                <artifactId>reflections</artifactId>
+                <version>0.9.12</version>
+            </dependency>
 
 		</dependencies>
 	</dependencyManagement>

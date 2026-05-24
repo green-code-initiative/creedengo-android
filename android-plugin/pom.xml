@@ -28,6 +28,20 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.green-code-initiative</groupId>
+			<artifactId>creedengo-rules-specifications</artifactId>
+			<version>${creedengo-rules-specifications.version}</version>
+			<classifier>java</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>org.green-code-initiative</groupId>
+			<artifactId>creedengo-rules-specifications</artifactId>
+			<version>${creedengo-rules-specifications.version}</version>
+			<classifier>xml</classifier>
+		</dependency>
+
+		<dependency>
 			<groupId>org.sonarsource.java</groupId>
 			<artifactId>sonar-java-plugin</artifactId>
 			<type>sonar-plugin</type>

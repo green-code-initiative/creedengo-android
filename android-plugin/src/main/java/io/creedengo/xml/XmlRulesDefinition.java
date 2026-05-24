@@ -17,24 +17,38 @@
  */
 package io.creedengo.xml;
 
-import org.sonar.api.SonarEdition;
-import org.sonar.api.SonarQubeSide;
-import org.sonar.api.SonarRuntime;
-import org.sonar.api.internal.SonarRuntimeImpl;
+import io.creedengo.common.RuleSpecificationLoader;
+import org.apache.commons.lang.StringUtils;
 import org.sonar.api.server.rule.RulesDefinition;
-import org.sonar.api.utils.Version;
-import org.sonarsource.analyzer.commons.RuleMetadataLoader;
+import org.sonar.api.server.rule.RulesDefinitionAnnotationLoader;
+import org.sonar.api.utils.AnnotationUtils;
 
 public final class XmlRulesDefinition implements RulesDefinition {
 
     @Override
     public void define(Context context) {
         NewRepository repository = context.createRepository(Xml.REPOSITORY_KEY, Xml.KEY).setName(Xml.REPOSITORY_NAME);
-        SonarRuntime sonarRuntime = SonarRuntimeImpl.forSonarQube(Version.create(9, 8), SonarQubeSide.SCANNER, SonarEdition.DEVELOPER);
-        RuleMetadataLoader ruleMetadataLoader = new RuleMetadataLoader(Xml.RULES_SPECIFICATIONS_XML_PATH, Xml.PROFILE_PATH,sonarRuntime);
 
-        // add the new checks
-        ruleMetadataLoader.addRulesByAnnotatedClass(repository, XmlCheckList.getXmlChecks());
+        for (Class<?> check : XmlCheckList.getXmlChecks()) {
+            new RulesDefinitionAnnotationLoader().load(repository, check);
+            enrichRule(check, repository);
+        }
         repository.done();
+    }
+
+    private void enrichRule(Class<?> ruleClass, NewRepository repository) {
+        org.sonar.check.Rule ruleAnnotation = AnnotationUtils.getAnnotation(ruleClass, org.sonar.check.Rule.class);
+        if (ruleAnnotation == null) {
+            throw new IllegalArgumentException("No Rule annotation was found on " + ruleClass);
+        }
+        String ruleKey = ruleAnnotation.key();
+        if (StringUtils.isEmpty(ruleKey)) {
+            throw new IllegalArgumentException("No key is defined in Rule annotation of " + ruleClass);
+        }
+        NewRule rule = repository.rule(ruleKey);
+        if (rule == null) {
+            throw new IllegalStateException("No rule was created for " + ruleClass + " in " + repository.key());
+        }
+        RuleSpecificationLoader.load(rule, ruleKey, Xml.RULES_SPECIFICATIONS_XML_PATH);
     }
 }
